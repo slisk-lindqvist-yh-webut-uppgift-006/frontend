@@ -6,7 +6,7 @@ const Events = () => {
     const [events, setEvents] = useState([])
 
     const getEvents = async () => {
-        const res = await fetch('https://localhost:7022/api/events')
+        const res = await fetch('https://localhost:7132/api/events')
         
         if (res.ok) {
             const data = await res.json()

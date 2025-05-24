@@ -1,13 +1,15 @@
+import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 import './App.css'
 import CenterLayout from './assets/layouts/CenterLayout'
 import PortalLayout from './assets/layouts/PortalLayout'
 import DashboardPage from './assets/pages/DashboardPage'
-import BookingPage from './assets/pages/BookingPage'
+import BookingsPage from './assets/pages/BookingsPage'
 import DashboardPage from './assets/pages/DashboardPage'
 import LoginPage from './assets/pages/LoginPage'
 import SignUpPage from './assets/pages/SignUpPage'
-import EventPage from './assets/pages/EventPage'
+import EventsPage from './assets/pages/EventsPage'
+import EventDetailsPage from './assets/pages/EventDetailsPage'
 
 function App() {
 
@@ -20,8 +22,9 @@ function App() {
         </Route>
         <Route path='/portal' element={<PortalLayout />}>
           <Route index element={<DashboardPage />} />
-          <Route path='bookings' element={<BookingPage />} />
-          <Route path='events' element={<EventPage />} />
+          <Route path='bookings' element={<BookingsPage />} />
+          <Route path='events' element={<EventsPage />} />
+          <Route path='events/:id' element={<EventDetailsPage />} />
         </Route>
     </Routes>
   )

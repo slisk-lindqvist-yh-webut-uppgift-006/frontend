@@ -1,6 +1,6 @@
 import { useParams } from 'react-router-dom'
 
-const EventDetailPage = () => {
+const EventDetailsPage = () => {
     const { id } = useParams()
 
     return (

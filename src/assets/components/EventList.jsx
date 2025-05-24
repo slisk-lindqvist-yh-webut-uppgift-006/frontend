@@ -25,7 +25,6 @@ const EventList = () => {
             {
                 events.map(event => (<EventItem key={event.id} item={event} />))
             }
-
         </section>
     )
 }

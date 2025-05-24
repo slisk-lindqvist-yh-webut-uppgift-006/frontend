@@ -5,7 +5,6 @@ const CenterLayout = () => {
   return (
     <div className='center-wrapper'>
         <main>
-            {/* much like renderbody in mvc */}
             <Outlet />
         </main>
     </div>

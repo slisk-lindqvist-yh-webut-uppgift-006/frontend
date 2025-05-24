@@ -9,7 +9,6 @@ const PortalLayout = () => {
         <Nav />
         <Header />
         <main>
-            {/* much like renderbody in mvc */}
             <Outlet />
         </main>
         <Footer />

@@ -2,11 +2,12 @@ import { Route, Routes } from 'react-router-dom'
 import './App.css'
 import CenterLayout from './assets/layouts/CenterLayout'
 import PortalLayout from './assets/layouts/PortalLayout'
-import Dashboard from './assets/pages/Dashboard'
-import Events from './assets/pages/Events'
-import Bookings from './assets/pages/Bookings'
-import Login from './assets/pages/Login'
-import Signup from './assets/pages/SignUp'
+import DashboardPage from './assets/pages/DashboardPage'
+import BookingPage from './assets/pages/BookingPage'
+import DashboardPage from './assets/pages/DashboardPage'
+import LoginPage from './assets/pages/LoginPage'
+import SignUpPage from './assets/pages/SignUpPage'
+import EventPage from './assets/pages/EventPage'
 
 function App() {
 
@@ -14,13 +15,13 @@ function App() {
       <Routes>
         <Route path='/' element={<CenterLayout />}>
           <Route index element={<h1>Home</h1>} />
-          <Route path='dashboard' element={<Login />} />
-          <Route path='settings' element={<Signup />} />
+          <Route path='signin' element={<LoginPage />} />
+          <Route path='signup' element={<SignUpPage />} />
         </Route>
         <Route path='/portal' element={<PortalLayout />}>
-          <Route index element={<Dashboard />} />
-          <Route path='bookings' element={<Bookings />} />
-          <Route path='events' element={<Events />} />
+          <Route index element={<DashboardPage />} />
+          <Route path='bookings' element={<BookingPage />} />
+          <Route path='events' element={<EventPage />} />
         </Route>
     </Routes>
   )
